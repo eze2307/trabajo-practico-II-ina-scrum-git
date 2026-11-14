@@ -1,4 +1,4 @@
-ttkbootstrap>=1.10.1
+ttkbootstrap>=2.2.7
 matplotlib>=3.8.0
 pyTelegramBotAPI>=4.14.0
 afip.py>=1.0.0
