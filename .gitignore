@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.spec
+
+# PyInstaller
+*.manifest
+*.spec
+Output/
+
+# Installer / executables
+*.exe
+*.msi
+*.msix
+
+# Backups and databases
+Backups_Quiosco/
+*.db
+
+# Logs and temporary files
+*.log
+error.log
+pyarmor.bug.log
+
+# Secrets and keys
+*.key
+.env
+
+# Ignore build artifacts
+build/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Visual Studio Code
+.vscode/

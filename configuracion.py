@@ -1,0 +1,10 @@
+IMPRIMIR_EN_PAPEL = True
+CARPETA_BACKUPS = "Backups_Quiosco"
+HABILITAR_TELEGRAM = True  # Cambiar a False para desactivar el bot
+MI_CUIT = 20123456789
+PUNTO_DE_VENTA = 1
+MODO_PRODUCCION = False
+tema_oscuro = False
+usuario_actual = ""
+rol_actual = ""
+carrito = []

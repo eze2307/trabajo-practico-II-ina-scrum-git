@@ -1,0 +1,16 @@
+# Historial de Arreglos y Optimizaciones - Mi Quiosco POS
+
+## 1. Sobreingeniería eliminada
+- Eliminada la falsa verificación de integridad de SQLite (hashing SHA-256 redundante en cada venta que disparaba popups de manipulación externa).
+- Eliminado el bloqueo artificial por hardware / licencia (DRM con vencimiento a 30 días, comprobación de reloj y solicitud de transferencias).
+- Simplificado el almacenamiento de CUIT y credenciales de Telegram, quitando el cifrado dependiente de la dirección MAC física que corrompía y borraba la configuración al cambiar de conexión de red.
+- Eliminado el algoritmo experimental de Machine Learning (KNN) para recomendaciones en kiosco y tablas en desuso (intentos fallidos e IP localhost).
+
+## 2. Fallas y bugs corregidos
+- Se añadió barra de desplazamiento vertical (Scrollbar) y auto-scroll al carrito de compras para que nunca se oculten los productos con ventas de muchos ítems.
+- Se incorporó el botón "Quitar Ítem" y la opción de doble clic en el carrito para remover artículos seleccionados sin tener que vaciar todo el carrito.
+- Se corrigió la transacción SQLite en el cobro de ventas mediante el gestor 'with conexion:', resolviendo el fallo 'cannot start a transaction within a transaction'.
+- Se optimizó la reducción de inventario haciéndola atómica en SQL (UPDATE productos SET stock = stock - ?).
+- Se corrigieron los métodos de pago (Efectivo, Billetera Virtual y Mixto), calculando correctamente importes, vueltos y formato de tickets.
+- Se solucionó el bucle de error 409 y saturación de error.log en el bot de Telegram.
+- Se aseguró que la ventana principal de inicio de sesión tome foco y se posicione en primer plano al abrir la aplicación.
