@@ -92,6 +92,7 @@ trabajo-practico-II-ina-scrum-git/
 ├── ui_ventas.py               # Carrito de compras, cobros y generación de tickets
 ├── ui_reportes.py             # Dashboard, historial, auditoría y ajustes
 ├── lista_precios.csv          # Catálogo inicial de 99 productos de ejemplo
+├── capturas/                  # Capturas reales de la aplicación en ejecución
 ├── tests/test_pos.py          # Pruebas unitarias automatizadas
 ├── respuestas_scrum.md        # Parte 2: reflexión teórica sobre Scrum
 ├── requirements.txt           # Dependencias de Python
@@ -102,6 +103,18 @@ trabajo-practico-II-ina-scrum-git/
 ---
 
 ## 4. Capturas de pantalla o ejemplos de resultados
+
+### Captura 1: Pantalla principal de punto de venta (Catálogo + Carrito)
+
+![Pantalla principal de Mi Quiosco POS](capturas/02_pos_ventas.png)
+
+### Captura 2: Inicio de sesión
+
+![Inicio de sesión de Mi Quiosco POS](capturas/01_login.png)
+
+### Captura 3: Dashboard de ventas (Top 5 productos más vendidos)
+
+![Dashboard de ventas en Matplotlib](capturas/03_dashboard_ventas.png)
 
 ### Ejemplo 1: Ejecución de pruebas unitarias (`unittest`)
 
